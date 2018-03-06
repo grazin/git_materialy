@@ -1,0 +1,4 @@
+Pracujesz nad projektem w œrodowisku Visual Studio. VS tworzy foldery i pliki, które nie powinny byæ widoczne dla repozytorium. Utwórz plik .gitignore i wprowadŸ odpowiednie wpisy, ¿e git ignorowa³ foldery:
+.vs bin obj debug i release 
+oraz pliki z rozszerzeniami:
+ .suo, .user i .log

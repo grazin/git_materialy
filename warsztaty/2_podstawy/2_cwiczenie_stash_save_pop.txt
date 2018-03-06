@@ -1,0 +1,25 @@
+Zacz¹³eœ pracê nad now¹ funkcjonalnoœci¹ w projekcie. Po jakimœ czasie masz w¹tpliwoœci, czy podejœcie które zastosowa³eœ jest najlepsze i chcesz wypróbowaæ inne. Chce jednak zachowaæ dotychczasow¹ pracê, gdyby okaza³o siê, ¿e jednak pierwsze podejœcie by³o najlepsze.
+
+U¿yj stosu, ¿eby od³o¿yæ na ten czas dotychczasow¹ pracê.
+
+Zapisz zmiany na stosie za pomoc¹ komendy
+
+git stash save
+
+Nastêpnie mo¿esz sprawdziæ zawartoœæ stosu komend¹
+
+git stash list
+
+a nastêpnie sprawdŸ status. Twoje repozytorium jest czyste i jesteœ gotów na implementacje nowego podejœcia.
+Okazuje siê jednak, ¿e pierwszy sposób by³ lepszy i chcesz przywróciæ teraz zmiany które masz na stosie. Jednak pracy wykonanej tak¿e nie chcesz utraciæ, bo pomys³y mog¹ przydaæ siê w innych okolicznoœciach. Od³ó¿ wiêc je na stos. SprawdŸ stos ponownie.
+Teraz przywróæ docelowe zmiany, które teraz znajduj¹ siê na dnie stosu. Twój stash ma referencjê stash@{0}, zdejmij j¹ ze stosu i usuñ za pomoc¹ komendy
+
+git stash pop stash@{0} 
+
+Jeœli nie chcesz usuwaæ tych zmian ze stosu zastosuj komendê 
+
+git stash apply stash@{0}
+
+
+
+  

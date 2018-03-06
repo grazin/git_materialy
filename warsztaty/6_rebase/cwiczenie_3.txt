@@ -1,0 +1,21 @@
+To samo repo: https://github.com/grazin/rebase_interactive_workshhop.git
+
+Okaza³o siê, ¿e zrobi³eœ niestosown¹ literówkê w opisie komita i musisz j¹ zmieniæ.
+U¿yj ponownie interaktywnego rebase'a, ¿eby zmieniæ opis ostatniego komita.
+
+git rebase -i HEAD~1
+
+WejdŸ w tryb Insert i przy komicie wstaw r (rewrite).
+
+<tutaj wydruk z obu kroków>
+
+Aby kontuowaæ wciœnij Escape a nastêpnie Shift+z+z lub qq
+
+Teraz ponownie sprawdŸ log:
+
+git log develop..ISSUE-20-grazyna-ze-szczecina 
+
+Opis zosta³ zmieniony.
+Wypuszuj t¹ zmianê. Tutaj równie¿ nale¿y dodaæ parametr --force.
+
+git push origin +ISSUE-20-grazyna-ze-szczecina

@@ -1,0 +1,24 @@
+Sklonuj repozytorium z Githuba: https://github.com/grazin/rebase_workshhop.git
+
+Pracujesz nad projektem razem z zespo³em.
+Zaczynasz now¹ funkcjonalnoœæ, opisan¹ w Jirze w tasku ISSUE-13.
+Aby rozpocz¹æ pracê, upewnij siê, ¿e masz najnowsz¹ wersjê brancza master, a nastêpnie odbranczuj siê z niego z unikaln¹ nazw¹ brancza np. ISSUE-13-grazyna-ze-szczecina.
+Dodaj jeden plik i dopisz linijkê na koñcu jednego z istniej¹cych ju¿ plików.
+Zakomituj zmiany i wypuszuj do origina.
+
+Z tak zwanym miêdzyczasie koledzy z zespo³u zrobili zmianê na branczu master.
+Wraz z zespo³em postanowiliœcie zmieniæ strategiê branching/merging i stosowaæ rebase, ¿eby zachowaæ przejrzystoœæ repozytorium.
+Chcesz zmerd¿owaæ swoje zmiany do mastera po skoñczeniu pracy.
+
+Najpierw jednak musisz wykonaæ rebase na swoim branczu. Kroki do wykonania bêd¹ nastêpuj¹ce:
+
+git checkout master
+git pull
+git checkout ISSUE-13-grazyna-ze-szczecina
+git rebase master
+git push ISSUE-13-grazyna-ze-szczecina --force (bo zmieniamy historiê)
+git checkout master
+git merge ISSUE-13-grazyna-ze-szczecina
+
+W tym momencie spójrz w log w GUI. Linia komitów jest prosta.
+

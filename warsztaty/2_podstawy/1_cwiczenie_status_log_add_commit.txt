@@ -1,0 +1,38 @@
+Przychodzisz do pracy po absorbuj¹cym weekendzie. Zanim zaczniesz pracê, chcesz dowiedzieæ siê jaki jest stan w twoim repozytorium projektowym. U¿yj komendy 
+
+git status
+
+¿eby siê dowiedzieæ.
+
+Jaki bêdzie output dla pustego repozytorium?
+
+Teraz utwórz nowy pusty plik w twoim repozytorium i ponownie sprawdŸ status.
+Jaki bêdzie output? Co to znaczy, ¿e plik nie jest trakowany (untracked)? 
+Co siê stanie je¿eli go usuniesz? Co zrobiæ, ¿eby by³ ju¿ bezpieczny?
+
+U¿yj komendy
+
+git add [nazwa_pliku]
+
+SprawdŸ status ponownie. Co siê zmieni³o?
+
+Zakomituj teraz nowo utworzony plik. Wpisz komendê
+
+git commit -m "Opis tego co zosta³o zrobione"
+
+Przeczytaj output, czego siê mo¿na z niego dowiedzieæ?
+Teraz mo¿esz te¿ ju¿ sprawdziæ log twojego repozytorium za pomoc¹ komendy
+ git log
+
+Utwórz jeszcze jeden plik, a w pierwszym zmieñ treœæ. SprawdŸ ponownie status. Co siê mo¿na z niego dowiedzieæ?
+
+Teraz dodaj zmiany do indeksu. Tym razem u¿yj komendy
+
+git add .
+
+czyli dodaj wszystko. I sprawdŸ status. 
+Nastêpnie zakomituj te zmiany, wpisz opis zmian.
+
+git commit -m "Nowe zmiany"
+
+SprawdŸ status i log

@@ -1,0 +1,35 @@
+Sklonuj repozytorium z Githuba: https://github.com/grazin/rebase_interactive_workshhop.git
+
+Pracujesz nad projektem razem z zespo³em.
+Zaczynasz now¹ funkcjonalnoœæ, opisan¹ w Jirze w tasku ISSUE-20.
+Aby rozpocz¹æ pracê, upewnij siê, ¿e masz najnowsz¹ wersjê brancza master, a nastêpnie odbranczuj siê z niego z unikaln¹ nazw¹ brancza np. ISSUE-20-grazyna-ze-szczecina.
+Dodaj jeden plik i zakomituj zmiany.
+Dopisz linijkê na koñcu jednego z istniej¹cych ju¿ plików i zakomituj zmiany.
+Wypuszuj do origina.
+
+Wraz z zespo³em postanowiliœcie zmieniæ strategiê branching/merging i stosowaæ rebase, ¿eby zachowaæ przejrzystoœæ repozytorium. Dodatkowo ka¿dy feature merd¿owany do mastera mo¿e mieæ tylko jeden komit.
+
+Aktualnie masz na swoim branczu 2 komity. Musisz z nich zrobiæ jeden. U¿yj polecenia rebase interactive, ¿eby to osi¹gn¹æ.
+W pierwszym kroku sprawdŸ ile masz komitów na swoim branczu (czasami praca nad ficzerem trwa kilka dni i ³atwo zapomnieæ ile ich siê zrobi³o).
+
+git log develop..ISSUE-20-grazyna-ze-szczecina
+
+Po upewnieniu siê, ¿e s¹ 2 komity, wejdŸ w tryb interaktywnego ribejza.
+
+git rebase -i HEAD~2
+
+WejdŸ w tryb Insert i przy pierwszym komicie zostaw pick a przy drugim wstaw f (fixup) lub s (squash)
+
+<tutaj wydruk z obu kroków>
+
+Aby kontuowaæ wciœnij Escape a nastêpnie Shift+z+z lub qq
+
+Teraz ponownie sprawdŸ log:
+
+git log develop..ISSUE-20-grazyna-ze-szczecina
+
+Powinien teraz byæ jeden komit.
+Wypuszuj teraz swoje zmiany w takiej formie. Musisz ponownie dodaæ parametr --force lub + przed nazw¹ brancza:
+
+git push origin +ISSUE-20-grazyna-ze-szczecina
+
