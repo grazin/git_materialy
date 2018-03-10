@@ -1,0 +1,14 @@
+Nadal repozytorium rebase_interactive_workshop z Githuba.
+
+Pracujesz wraz z zespo³em nad projektem, który w³aœnie wchodzi na produkcjê. Uda³o wam siê wyrilisowaæ projekt i oddaæ klientom do u¿ytku i chcecie oznaczyæ w historii gita ten historyczny moment.
+
+WejdŸ na brancz master i utwórz taga
+
+git checkout master
+git pull
+git tag production_release_[your-github-username]
+git push --tags
+
+Zobacz w historii jak nowy tag jest przesstawiony
+
+git log --oneline
