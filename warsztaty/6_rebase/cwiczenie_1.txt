@@ -1,24 +1,36 @@
-Sklonuj repozytorium z Githuba: https://github.com/grazin/rebase_workshhop.git
+Sklonuj repozytorium rebase_workshop z Githuba.
 
-Pracujesz nad projektem razem z zespo³em.
+git clone git@github.com:grazin/rebase_workshop.git
+
+Pracujesz nad projektem razem z zespo³em. Postanowiliœcie zmieniæ strategiê branching/merging i stosowaæ rebase, ¿eby zachowaæ przejrzystoœæ repozytorium.
+
 Zaczynasz now¹ funkcjonalnoœæ, opisan¹ w Jirze w tasku ISSUE-13.
-Aby rozpocz¹æ pracê, upewnij siê, ¿e masz najnowsz¹ wersjê brancza master, a nastêpnie odbranczuj siê z niego z unikaln¹ nazw¹ brancza np. ISSUE-13-grazyna-ze-szczecina.
+Aby rozpocz¹æ pracê, upewnij siê, ¿e masz najnowsz¹ wersjê brancza master, a nastêpnie odbranczuj siê z niego z unikaln¹ nazw¹: ISSUE-13-[your-github-username].
+
+git checkout master
+git pull
+git checkout -b ISSUE-13-[your-github-username]
+
 Dodaj jeden plik i dopisz linijkê na koñcu jednego z istniej¹cych ju¿ plików.
 Zakomituj zmiany i wypuszuj do origina.
 
-Z tak zwanym miêdzyczasie koledzy z zespo³u zrobili zmianê na branczu master.
-Wraz z zespo³em postanowiliœcie zmieniæ strategiê branching/merging i stosowaæ rebase, ¿eby zachowaæ przejrzystoœæ repozytorium.
-Chcesz zmerd¿owaæ swoje zmiany do mastera po skoñczeniu pracy.
+W tak zwanym miêdzyczasie koledzy z zespo³u zrobili zmianê na branczu master.
 
+Chcesz zmerd¿owaæ swoje zmiany do mastera po skoñczeniu pracy.
 Najpierw jednak musisz wykonaæ rebase na swoim branczu. Kroki do wykonania bêd¹ nastêpuj¹ce:
 
 git checkout master
 git pull
-git checkout ISSUE-13-grazyna-ze-szczecina
+git checkout ISSUE-13-[your-github-username]
 git rebase master
-git push ISSUE-13-grazyna-ze-szczecina --force (bo zmieniamy historiê)
+git push ISSUE-13-[your-github-username] --force (bo zmieniamy historiê)
 git checkout master
-git merge ISSUE-13-grazyna-ze-szczecina
+git merge ISSUE-13-[your-github-username]
 
-W tym momencie spójrz w log w GUI. Linia komitów jest prosta.
+Teraz spójrz na graf historii
+
+git log --graph
+
+Lub w git GUI
+Linia komitów jest prosta.
 

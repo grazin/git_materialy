@@ -1,38 +1,40 @@
-Przychodzisz do pracy po absorbuj¹cym weekendzie. Zanim zaczniesz pracê, chcesz dowiedzieæ siê jaki jest stan w twoim repozytorium projektowym. U¿yj komendy 
+Przychodzisz do pracy po absorbuj¹cym weekendzie. Zanim zaczniesz pracê, chcesz dowiedzieæ siê jaki jest stan w twoim repozytorium projektowym. 
+Zacznij od utworzenia nowego repozytorium lokalnego za pomoc¹ polecenia
+
+git init
+
+¯eby sprawdziæ stan, u¿yj funkcji
 
 git status
 
-¿eby siê dowiedzieæ.
-
-Jaki bêdzie output dla pustego repozytorium?
+Przeczytaj ze zrozumieniem output dla pustego repozytorium.
 
 Teraz utwórz nowy pusty plik w twoim repozytorium i ponownie sprawdŸ status.
-Jaki bêdzie output? Co to znaczy, ¿e plik nie jest trakowany (untracked)? 
-Co siê stanie je¿eli go usuniesz? Co zrobiæ, ¿eby by³ ju¿ bezpieczny?
-
-U¿yj komendy
+Przeczytaj ze zrozumieniem output. A nastêpnie dodaj plik do indeksu. U¿yj komendy
 
 git add [nazwa_pliku]
 
-SprawdŸ status ponownie. Co siê zmieni³o?
+SprawdŸ status ponownie i ponownie przeczytaj go uwa¿nie.
 
 Zakomituj teraz nowo utworzony plik. Wpisz komendê
 
 git commit -m "Opis tego co zosta³o zrobione"
 
-Przeczytaj output, czego siê mo¿na z niego dowiedzieæ?
+Przeczytaj output z komita.
 Teraz mo¿esz te¿ ju¿ sprawdziæ log twojego repozytorium za pomoc¹ komendy
- git log
 
-Utwórz jeszcze jeden plik, a w pierwszym zmieñ treœæ. SprawdŸ ponownie status. Co siê mo¿na z niego dowiedzieæ?
+git log
 
-Teraz dodaj zmiany do indeksu. Tym razem u¿yj komendy
+Utwórz jeszcze jeden plik, a w pierwszym zmieñ treœæ. SprawdŸ ponownie status. 
+Teraz dodaj zmiany do indeksu. Tym razem u¿yj komendy "dodaj wszystko":
 
 git add .
 
-czyli dodaj wszystko. I sprawdŸ status. 
-Nastêpnie zakomituj te zmiany, wpisz opis zmian.
+SprawdŸ status. 
+Nastêpnie zakomituj te zmiany, ale nie wpisuj parametru -m:
 
-git commit -m "Nowe zmiany"
+git commit
 
+Git bash i tak poprosi ciê o wpisanie i zatwierdzenie tytu³u komita.
+Tryb edycji w zale¿noœci od systemu
 SprawdŸ status i log

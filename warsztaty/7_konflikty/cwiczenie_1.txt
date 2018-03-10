@@ -1,0 +1,50 @@
+Nadal repozytorium rebase_interactive_workshop z Githuba.
+
+Pracujesz nad projektem razem z zespo³em, przed merd¿em zmian ribejzujecie ficzer brancze.
+
+Zaczynasz now¹ funkcjonalnoœæ, opisan¹ w Jirze w tasku ISSUE-13.
+Aby rozpocz¹æ pracê, upewnij siê, ¿e masz najnowsz¹ wersjê brancza master, a nastêpnie odbranczuj siê z niego z unikaln¹ nazw¹: ISSUE-13-[your-github-username].
+
+git checkout master
+git pull
+git checkout -b ISSUE-13-[your-github-username]
+
+W pliku data/config.json zmieñ dane w obiekcie json.
+W pliku src/file1.txt zmieñ linijkê pierwsz¹.
+Zakomituj zmiany i wypuszuj do origina.
+
+W tak zwanym miêdzyczasie koledzy z zespo³u zrobili zmianê na branczu master w tych samych plikach. Plik data/config.json powinien nadal mieæ zawartoœæ tak¹ jak na branczu master, natomiast plik src/file1.txt powinien zawrzeæ zmiany z obu branczy. 
+
+Wykonaj ribejs na swoim branczu. Kroki do wykonania bêd¹ nastêpuj¹ce:
+
+git checkout master
+git pull
+git checkout ISSUE-13-[your-github-username]
+git rebase master
+
+Po poleceniu rebase otrzymasz informacjê o konfliktach.
+Wylistuj skonfliktowane pliki
+
+$ git diff --name-only --diff-filter=U
+
+Najpierw rozwi¹¿ konflikt z pliku data/config.json na korzyœæ brancza master
+
+git checkout --ours data/config.json
+
+Nastêpnie rozwi¹¿ rêcznie konflikty w pliku src/file1.txt tak aby zawiera³ zmiany z obu branczy.
+Teraz oznacz konflikty jako rozwi¹zane
+
+git add .
+
+I dokoñcz ribejz
+
+git rebase --continue
+
+SprawdŸ historiê swojego brancza
+
+git log --graph
+
+
+
+
+
