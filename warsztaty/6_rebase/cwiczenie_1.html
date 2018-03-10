@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <p class="plot">
+            Pracujesz nad projektem razem z zespołem. Postanowiliście zmienić strategię branching/merging i stosować rebase, żeby zachować
+            przejrzystość repozytorium. Zaczynasz nową funkcjonalność, opisaną w Jirze w tasku issue-13. Po skończonej pracy
+            przygotuj swój brancz tak, żeby był aktualny względem brancza master.
+        </p>
+        <img style="height: 300px" src="https://i.stack.imgur.com/HhE2l.png" />
+
+        <div class="piece">
+            <div class="git">
+                $ git clone git@github.com:grazin/rebase_workshop.git
+            </div>
+            <p>Sklonuj repozytorium <span class="command">rebase_workshop</span> z Githuba.</p>
+        </div>
+        <div class="clear"></div>
+
+        <div class="piece">
+            <div class="git">
+                $ git checkout master
+                <br /> $ git pull
+                <br /> $ git checkout -b issue-13-[your-github-username]
+            </div>
+            <p>
+                Aby rozpocząć pracę, upewnij się, że masz najnowszą wersję brancza master, a następnie odbranczuj się z niego z unikalną
+                nazwą <span class="command">issue-13-[your-github-username]</span>.
+
+            </p>
+        </div>
+        <div class="clear"></div>
+
+
+        <p>
+            Dodaj jeden plik i dopisz linijkę na końcu jednego z istniejących już plików. Zakomituj zmiany i wypuszuj do origina.</p>
+        <p>
+            W tak zwanym międzyczasie koledzy z zespołu zrobili zmianę na branczu master.</p>
+
+        <div class="piece">
+            <div class="git">
+                $ git checkout master
+                <br /> $ git pull
+                <br /> $ git checkout issue-13-[your-github-username]
+                <br /> $ git rebase master
+                <br /> $ git push issue-13-[your-github-username] --force
+                <br /> $ git checkout master
+                <br /> $ git merge issue-13-[your-github-username]
+                <br />
+            </div>
+            <p>Chcesz zmerdżować swoje zmiany do mastera po skończeniu pracy. Najpierw jednak musisz wykonać rebase na swoim
+                branczu. </p>
+        </div>
+        <div class="clear"></div>
+
+        <p>Parametr
+            <span class="command">--force</span> jest konieczny przy puszowaniu po zmianie historii.</p>
+
+
+        <div class="piece">
+            <div class="git">
+                $ git log --graph
+            </div>
+            <p>Teraz spójrz na graf historii. Lub w git GUI Linia komitów jest prosta.</p>
+        </div>
+        <div class="clear"></div>
+
+    </div>
+</body>
+
+</html>

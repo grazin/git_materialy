@@ -1,30 +1,30 @@
-Zacz¹³eœ pracê nad now¹ funkcjonalnoœci¹ w projekcie. Po jakimœ czasie masz w¹tpliwoœci, czy podejœcie które zastosowa³eœ jest najlepsze i chcesz wypróbowaæ inne. Chcesz jednak zachowaæ dotychczasow¹ pracê, gdyby okaza³o siê, ¿e jednak pierwsze podejœcie by³o najlepsze.
+ZaczÄ…Å‚eÅ› pracÄ™ nad nowÄ… funkcjonalnoÅ›ciÄ… w projekcie. Po jakimÅ› czasie masz wÄ…tpliwoÅ›ci, czy podejÅ›cie ktÃ³re zastosowaÅ‚eÅ› jest najlepsze i chcesz wyprÃ³bowaÄ‡ inne. Chcesz jednak zachowaÄ‡ dotychczasowÄ… pracÄ™, gdyby okazaÅ‚o siÄ™, Å¼e jednak pierwsze podejÅ›cie byÅ‚o najlepsze.
 
-U¿yj repozytorium z poprzedniego æwiczenia.
+UÅ¼yj repozytorium z poprzedniego Ä‡wiczenia.
 
-Otwórz jeden z istniej¹cych ju¿ plików i dodaj treœæ.
-U¿yj stosu, ¿eby od³o¿yæ na ten czas dotychczasow¹ pracê. Zapisz zmiany na stosie za pomoc¹ komendy
+OtwÃ³rz jeden z istniejÄ…cych juÅ¼ plikÃ³w i dodaj treÅ›Ä‡.
+UÅ¼yj stosu, Å¼eby odÅ‚oÅ¼yÄ‡ na ten czas dotychczasowÄ… pracÄ™. Zapisz zmiany na stosie za pomocÄ… komendy
 
 git stash save
 
-Nastêpnie mo¿esz sprawdziæ zawartoœæ stosu komend¹
+NastÄ™pnie moÅ¼esz sprawdziÄ‡ zawartoÅ›Ä‡ stosu komendÄ…
 
 git stash list
 
-Teraz sprawdŸ status. Twoje repozytorium jest czyste i jesteœ gotów na implementacje nowego podejœcia.
+Teraz sprawdÅº status. Twoje repozytorium jest czyste i jesteÅ› gotÃ³w na implementacje nowego podejÅ›cia.
 
-Otwórz wiêc istniej¹cy plik i dodaj/zmieñ treœæ.
+OtwÃ³rz wiÄ™c istniejÄ…cy plik i dodaj/zmieÅ„ treÅ›Ä‡.
 
-Okazuje siê, ¿e pierwszy sposób by³ lepszy i chcesz przywróciæ teraz zmiany które masz na stosie. Jednak pracy wykonanej tak¿e nie chcesz utraciæ, bo pomys³y mog¹ przydaæ siê w innych okolicznoœciach. Od³ó¿ wiêc je na stos. SprawdŸ stos ponownie.
+Okazuje siÄ™, Å¼e pierwszy sposÃ³b byÅ‚ lepszy i chcesz przywrÃ³ciÄ‡ teraz zmiany ktÃ³re masz na stosie. Jednak pracy wykonanej takÅ¼e nie chcesz utraciÄ‡, bo pomysÅ‚y mogÄ… przydaÄ‡ siÄ™ w innych okolicznoÅ›ciach. OdÅ‚Ã³Å¼ wiÄ™c je na stos. SprawdÅº stos ponownie.
 
 git stash save
 git stash list
 
-Teraz przywróæ docelowe zmiany, które teraz znajduj¹ siê na dnie stosu. Twój stash ma referencjê stash@{1}, zdejmij j¹ ze stosu i usuñ za pomoc¹ komendy
+Teraz przywrÃ³Ä‡ docelowe zmiany, ktÃ³re teraz znajdujÄ… siÄ™ na dnie stosu. TwÃ³j stash ma referencjÄ™ stash@{1}, zdejmij jÄ… ze stosu i usuÅ„ za pomocÄ… komendy
 
 git stash pop stash@{1} 
 
-Jeœli nie chcesz usuwaæ tych zmian ze stosu zastosuj komendê 
+JeÅ›li nie chcesz usuwaÄ‡ tych zmian ze stosu zastosuj komendÄ™ 
 
 git stash apply stash@{1}
 

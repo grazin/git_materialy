@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../style.css" rel="stylesheet" >
+</head>
+
+<body>
+    <div class="content">
+        <p class="plot">
+                Zacząłeś pracę nad nową funkcjonalnością w projekcie. Po jakimś czasie masz wątpliwości, czy podejście które zastosowałeś jest najlepsze 
+                i chcesz wypróbować inne. Chcesz jednak zachować dotychczasową pracę, gdyby okazało się, że jednak pierwsze podejście było najlepsze.
+        </p>
+         <img style="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF1n9K9rVAAqBF7SD9aHCJQAFtjKD4d8IoGy5NwFgZNEF4OZXkBA" />
+        
+        <p>Użyj repozytorium z poprzedniego ćwiczenia.</p>
+
+        <div class="piece">
+            <div class="git">
+                $ git stash save
+            </div>
+            <p>Otwórz jeden z istniejących już plików i dodaj treść.
+                    Użyj stosu, żeby odłożyć na ten czas dotychczasową pracę. Zapisz zmiany na stosie za pomocą polecenia <span class="command">stash save</span>.</p>
+        </div>
+        <div class="clear"></div>
+
+
+        <div class="piece">
+            <div class="git">
+                $ git stash list
+            </div><p>Następnie możesz sprawdzić zawartość stosu komendą <span class="command">stash list</span>.</p>
+
+
+        </div>
+        <div class="clear"></div>
+
+        <p>Teraz sprawdź status. Twoje repozytorium jest czyste i jesteś gotów na implementacje nowego podejścia. <br />
+                Otwórz więc istniejący plik i dodaj/zmień treść.
+            </p>
+            <p class="plot">
+                Okazuje się, że pierwszy sposób był lepszy i chcesz przywrócić teraz zmiany które masz na stosie. 
+                Jednak pracy wykonanej także nie chcesz utracić, bo pomysły mogą przydać się w innych okolicznościach. 
+                
+        </p>
+
+        <div class="piece">
+                <div class="git">
+                    $ git stash save<br />
+                    $ git stash list
+                </div><p>Odłóż więc nowe podejście na stos. Sprawdź stos ponownie.</p>
+    
+    
+            </div>
+            <div class="clear"></div>
+        
+            <div class="piece">
+                    <div class="git">
+                        $ git stash pop stash@{1} 
+                    </div><p>Przywróć docelowe zmiany, które teraz znajdują się na dnie stosu. Twój stasz ma referencję 
+                        <span class="command">stash@{1}</span>, zdejmij ją ze stosu i usuń za pomocą komendy <span class="command">pop</span>.</p>
+        
+        
+                </div>
+                <div class="clear"></div>
+            
+                <div class="piece">
+                        <div class="git">
+                            $ git stash apply stash@{1} 
+                        </div><p>Jeśli nie chcesz usuwać tych zmian ze stosu zastosuj komendę
+                            <span class="command">apply</span>.</p>
+            
+            
+                    </div>
+                    <div class="clear"></div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <p class="plot">
+            Pracujesz nad projektem razem z zespołem. Postanowiliście udoskonalić strategię branching/merging i stosować rebase interaktywny,
+            żeby każdy feature merdżowany do mastera miał tylko jeden komit. Zaczynasz nową funkcjonalność, opisaną w Jirze
+            w tasku issue-13. Po skończonej pracy przygotuj swój brancz tak, żeby był aktualny względem brancza master i
+            zawierał tylko jeden komit.
+        </p>
+        <img style="height: 300px" src="https://cdn1.medicalnewstoday.com/content/images/articles/284/284479/butternut-squash.jpg"
+        />
+
+        <div class="piece">
+            <div class="git">
+                $ git clone git@github.com:grazin/rebase_interactive_workshop.git
+            </div>
+            <p>Sklonuj repozytorium
+                <span class="command">rebase_interactive_workshop</span> z Githuba.</p>
+        </div>
+        <div class="clear"></div>
+
+        <div class="piece">
+            <div class="git">
+                $ git checkout master
+                <br /> $ git pull
+                <br /> $ git checkout -b issue-13-[your-github-username]
+            </div>
+            <p>
+                Aby rozpocząć pracę, upewnij się, że masz najnowszą wersję brancza master, a następnie odbranczuj się z niego z unikalną
+                nazwą
+                <span class="command">issue-13-[your-github-username]</span>.
+
+            </p>
+        </div>
+        <div class="clear"></div>
+
+
+        <p>
+            Dodaj jeden plik i zakomituj zmiany.
+            <br /> Dopisz linijkę na końcu jednego z istniejących już plików i zakomituj zmiany.
+            <br /> Wypuszuj wszystko do origina.
+        </p>
+        <p>
+            Aktualnie masz na swoim branczu 2 komity. Musisz je złączyć w jeden. Użyj polecenia
+            <span class="command">rebase --interactive</span>, żeby to osiągnąć.</p>
+
+
+        <div class="piece">
+            <div class="git">
+                $ git log master..issue-13-[your-github-username]
+            </div>
+            <p>W pierwszym kroku sprawdź ile masz komitów na swoim branczu (czasami praca nad ficzerem trwa kilka dni i łatwo
+                zapomnieć ile ich się zrobiło).</p>
+        </div>
+        <div class="clear"></div>
+
+
+        <div class="piece">
+            <div class="git">
+                $ git rebase -i HEAD~2
+            </div>
+            <p>Po upewnieniu się, że są 2 komity, wejdź w tryb interaktywnego ribejza.</p>
+        </div>
+        <div class="clear"></div>
+
+
+        <div class="piece">
+            <div class="git">
+                pick 3ac1c09 komit #1
+                <br /> f 50e26c3 komit #2
+            </div>
+            <p>
+                Wejdź w tryb edycji (
+                <span class="command">i</span> lub
+                <span class="command">Insert</span>) i przy pierwszym komicie zostaw pick a przy drugim wstaw
+                <span class="command">f</span> (fixup) lub
+                <span class="command">s</span> (squash).</p>
+        </div>
+        <div class="clear"></div>
+
+
+
+        <p>Aby kontuować wciśnij Escape a następnie
+            <span class="command">Shift+zz</span> lub
+            <span class="command">:wq</span>.</p>
+
+        <div class="piece">
+            <div class="git">
+                $ git log master..issue-13-[your-github-username]
+            </div>
+            <p>Teraz ponownie sprawdź log. Powinien teraz być jeden komit.</p>
+        </div>
+        <div class="clear"></div>
+
+        <div class="piece">
+            <div class="git">
+                $ git push origin +issue-13-[your-github-username]
+            </div>
+            <p>Wypuszuj teraz swoje zmiany w takiej formie. Musisz ponownie dodać parametr
+                <span class="command">--force</span>
+                lub
+                <span class="command">+</span> przed nazwą brancza, ponieważ zmieniłeś jego historię.</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+            <p class="plot">
+Okazało się, że zrobiłeś niestosowną literówkę w opisie komita i musisz ją zmienić.
+Użyj ponownie interaktywnego ribejza, żeby zmienić opis ostatniego komita.</p>
+<img style="height: 250px" src="https://cdn-images-1.medium.com/max/1591/1*IBdCsrEFQmfrnj9yyckQ6g.jpeg" />
+<p>Użyj repozytorium z poprzedniego ćwiczenia.</p>
+
+<div class="piece">
+        <div class="git">
+            $ git rebase -i HEAD~1
+        </div>
+        <p>Rozpocznij ribejz z uwzględnieniem jednego, ostatniego komita.</p>
+    </div>
+    <div class="clear"></div>
+
+    <div class="piece">
+            <div class="git">
+                    r 3ac1c09 komit #1
+            </div>
+            <p>
+                Wejdź w tryb edycji (
+                <span class="command">i</span> lub
+                <span class="command">Insert</span>) i przy komicie wstaw
+                <span class="command">r</span> (reword).</p>
+        </div>
+        <div class="clear"></div>
+
+        <p>Aby kontuować wciśnij Escape a następnie
+                <span class="command">Shift+zz</span> lub
+                <span class="command">:wq</span>.</p>
+
+<p>
+    Zostaniesz poproszony o edycję wskazanego komita. Wejdź w tryb edycji (
+        <span class="command">i</span> lub
+        <span class="command">Insert</span>), 
+        zmień tytuł komita i wyjdź <span class="command">Shift+zz</span> lub
+        <span class="command">:wq</span>.</p>
+
+</p>
+
+<div class="piece">
+        <div class="git">
+            $ git log master..issue-13-[your-github-username]
+        </div>
+        <p>Teraz ponownie sprawdź log. Opis został zmieniony.</p>
+    </div>
+    <div class="clear"></div>
+
+    <div class="piece">
+            <div class="git">
+                $ git push origin +issue-13-[your-github-username]
+            </div>
+            <p>Wypuszuj tą zmianę. Tutaj również należy dodać parametr <span class="command">--force</span>
+                lub
+                <span class="command">+</span>.</p>
+        </div>
+        <div class="clear"></div>
+
+
+
+
+
+
+</div>
+</body>
+
+</html>

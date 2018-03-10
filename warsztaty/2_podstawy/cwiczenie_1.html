@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <link href="../style.css" rel="stylesheet" >
+            </head>
+
+<body>
+    <div class="content">
+        <p class="plot">
+            Przychodzisz do pracy po absorbującym weekendzie. Chcesz zakomitować swoje zmiany ale zanim zaczniesz, musisz dowiedzieć się jaki jest stan w twoim repozytorium
+            projektowym. 
+        </p>
+        <img style="width: 300px" src="https://apramie.files.wordpress.com/2015/09/img_6985.png" />
+        
+        <div class="piece">
+            <div class="git">
+                $ git init
+            </div>
+            <p>Zacznij od utworzenia nowego repozytorium lokalnego za pomocą polecenia <span class="command">init</span>.</p>
+        </div>
+        <div class="clear"></div>
+
+
+        <div class="piece">
+            <div class="git">
+                $ git status
+            </div><p>Żeby sprawdzić stan, użyj polecenia <span class="command">status</span>. Przeczytaj ze zrozumieniem output dla pustego repozytorium.</p>
+
+
+        </div>
+        <div class="clear"></div>
+
+
+
+        <div class="piece">
+            <div class="git">
+                $ git add [nazwa_pliku]
+            </div>
+            <p>Teraz utwórz nowy pusty plik w twoim repozytorium i ponownie sprawdź status. Przeczytaj ze zrozumieniem.
+            A następnie dodaj plik do indeksu. Użyj komendy <span class="command">add</span> i sprawdź status ponownie.</p>
+
+        </div>
+        <div class="clear"></div>
+
+
+        <div class="piece">
+            <div class="git">
+                    $ git commit -m "Opis tego co zostało zrobione"
+            </div>
+            <p>Zakomituj teraz nowo utworzony plik. Przeczytaj output z komita.</p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="piece">
+            <div class="git">
+                    $ git log
+            </div>
+            <p>Teraz możesz też już sprawdzić log twojego repozytorium.</p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="piece">
+            <div class="git">
+                    $ git add .
+            </div>
+            <p>Utwórz jeszcze jeden plik, a w pierwszym zmień treść. Sprawdź ponownie status. Dodaj zmiany do indeksu.
+            Tym razem użyj komendy <span class="command">add .</span> czyli "dodaj wszystko". Sprawdź status. </p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="piece">
+            <div class="git">
+                    $ git commit
+            </div>
+            <p>Następnie zakomituj te zmiany, ale nie wpisuj parametru <span class="command">-m</span>.</p>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="piece">
+                <div class="git">
+                        <br />
+                        # Please enter the commit message for your changes. Lines starting<br />
+                        # with '#' will be ignored, and an empty message aborts the commit.<br />
+                        #<br />
+                        # On branch master<br />
+                        # Changes to be commited:<br />
+                        # &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modified:&nbsp;&nbsp;file1.txt<br />
+                        #<br />
+                        ~<br />
+                        ~<br />
+                </div>
+                <p>Git bash i tak poprosi cię o wpisanie i zatwierdzenie tytułu komita. Wejdź w tryb edycji <span class="command">i</span> lub <span class="command">Insert</span>. 
+            Wprowadź tytul i wyjdź <span class="command">Escape</span> a następnie zakończ <span class="command">Shift+zz</span> lub <span class="command">:wq</span>. 
+            Sprawdź status i log</p>
+        </div>
+    </div>
+</body>
+
+</html>

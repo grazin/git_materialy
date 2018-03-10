@@ -1,40 +1,40 @@
-Przychodzisz do pracy po absorbuj¹cym weekendzie. Zanim zaczniesz pracê, chcesz dowiedzieæ siê jaki jest stan w twoim repozytorium projektowym. 
-Zacznij od utworzenia nowego repozytorium lokalnego za pomoc¹ polecenia
+Przychodzisz do pracy po absorbujÄ…cym weekendzie. Zanim zaczniesz pracÄ™, chcesz dowiedzieÄ‡ siÄ™ jaki jest stan w twoim repozytorium projektowym. 
+Zacznij od utworzenia nowego repozytorium lokalnego za pomocÄ… polecenia
 
 git init
 
-¯eby sprawdziæ stan, u¿yj funkcji
+Å»eby sprawdziÄ‡ stan, uÅ¼yj funkcji
 
 git status
 
 Przeczytaj ze zrozumieniem output dla pustego repozytorium.
 
-Teraz utwórz nowy pusty plik w twoim repozytorium i ponownie sprawdŸ status.
-Przeczytaj ze zrozumieniem output. A nastêpnie dodaj plik do indeksu. U¿yj komendy
+Teraz utwÃ³rz nowy pusty plik w twoim repozytorium i ponownie sprawdÅº status.
+Przeczytaj ze zrozumieniem output. A nastÄ™pnie dodaj plik do indeksu. UÅ¼yj komendy
 
 git add [nazwa_pliku]
 
-SprawdŸ status ponownie i ponownie przeczytaj go uwa¿nie.
+SprawdÅº status ponownie i ponownie przeczytaj go uwaÅ¼nie.
 
-Zakomituj teraz nowo utworzony plik. Wpisz komendê
+Zakomituj teraz nowo utworzony plik. Wpisz komendÄ™
 
-git commit -m "Opis tego co zosta³o zrobione"
+git commit -m "Opis tego co zostaÅ‚o zrobione"
 
 Przeczytaj output z komita.
-Teraz mo¿esz te¿ ju¿ sprawdziæ log twojego repozytorium za pomoc¹ komendy
+Teraz moÅ¼esz teÅ¼ juÅ¼ sprawdziÄ‡ log twojego repozytorium za pomocÄ… komendy
 
 git log
 
-Utwórz jeszcze jeden plik, a w pierwszym zmieñ treœæ. SprawdŸ ponownie status. 
-Teraz dodaj zmiany do indeksu. Tym razem u¿yj komendy "dodaj wszystko":
+UtwÃ³rz jeszcze jeden plik, a w pierwszym zmieÅ„ treÅ›Ä‡. SprawdÅº ponownie status. 
+Teraz dodaj zmiany do indeksu. Tym razem uÅ¼yj komendy "dodaj wszystko":
 
 git add .
 
-SprawdŸ status. 
-Nastêpnie zakomituj te zmiany, ale nie wpisuj parametru -m:
+SprawdÅº status. 
+NastÄ™pnie zakomituj te zmiany, ale nie wpisuj parametru -m:
 
 git commit
 
-Git bash i tak poprosi ciê o wpisanie i zatwierdzenie tytu³u komita.
-Tryb edycji w zale¿noœci od systemu
-SprawdŸ status i log
+Git bash i tak poprosi ciÄ™ o wpisanie i zatwierdzenie tytuÅ‚u komita.
+Tryb edycji w zaleÅ¼noÅ›ci od systemu
+SprawdÅº status i log
