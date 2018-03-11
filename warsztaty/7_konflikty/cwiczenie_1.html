@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+            <p class="plot">
+                    Pracujesz nad projektem razem z zespołem. Strategia branching/merging się sprawdza, teraz przyjdzie się wam zmierzyć z konfliktami. 
+                    Zaczynasz nową funkcjonalność, opisaną w Jirze
+                    w tasku issue-13. Po skończonej pracy przygotuj swój brancz tak, żeby był aktualny względem brancza master i
+                    zawierał tylko jeden komit.
+                </p>
+                <img style="height: 250px" src="https://ourconvergence.org/iterations/200_b3/wp-content/uploads/2013/11/calvin-hobbes-conflict-620x350.png"
+                />
+                <p>Użyj repozytorium z poprzedniego ćwiczenia.</p>
+
+                <div class="piece">
+                        <div class="git">
+                            $ git checkout master
+                            <br /> $ git pull
+                            <br /> $ git checkout -b issue-13-[your-github-username]
+                        </div>
+                        <p>
+                            Aby rozpocząć pracę, upewnij się, że masz najnowszą wersję brancza master, a następnie odbranczuj się z niego z unikalną
+                            nazwą
+                            <span class="command">issue-13-[your-github-username]</span>.
+            
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+
+                    <p>
+W pliku <span class="command">data/config.json</span> zmień dane w obiekcie json. <br />
+W pliku <span class="command">src/file1.txt</span> zmień linijkę pierwszą.<br />
+Zakomituj zmiany i wypuszuj do origina.</p>
+
+<p>
+W tak zwanym międzyczasie koledzy z zespołu zrobili zmianę na branczu master w tych samych plikach. <br />
+Plik <span class="command">data/config.json</span> powinien nadal mieć zawartość taką jak na branczu master, <br />
+natomiast plik <span class="command">src/file1.txt</span> powinien zawrzeć zmiany z obu branczy. 
+</p>
+
+<div class="piece">
+        <div class="git">
+            $ git checkout master<br />
+            $ git pull<br />
+            $ git checkout issue-13-[your-github-username]<br />
+            $ git rebase master
+        </div>
+        <p>
+            Po zakończonej pracy rozpocznij ribejz.
+        </p>
+    </div>
+    <div class="clear"></div>
+<p></p>
+    <div class="piece">
+            <div class="git">
+                    $ git diff --name-only --diff-filter=U
+</div>
+<p>
+        Po poleceniu <span class="command">rebase</span> otrzymasz informację o konfliktach. Wylistuj skonfliktowane pliki.
+</p>
+</div>
+<div class="clear"></div>
+
+<div class="piece">
+        <div class="git">
+            $ git checkout --ours data/config.json
+        </div>
+        <p>
+                Najpierw rozwiąż konflikt z pliku <span class="command">data/config.json</span> na korzyść brancza master.
+
+        </p>
+    </div>
+    <div class="clear"></div>
+
+<p>Następnie rozwiąż ręcznie konflikty w pliku <span class="command">src/file1.txt</span> tak aby zawierał zmiany z obu branczy.</p>
+
+<div class="piece">
+        <div class="git">
+            $ git add .
+        </div>
+        <p>
+                Teraz oznacz konflikty jako rozwiązane.
+
+        </p>
+    </div>
+    <div class="clear"></div>
+
+
+    <div class="piece">
+            <div class="git">
+                $ git rebase --continue
+            </div>
+            <p>
+                    I dokończ ribejz.
+            </p>
+        </div>
+        <div class="clear"></div>
+
+        <div class="piece">
+                <div class="git">
+                    $ git log --graph
+                </div>
+                <p>
+                        Sprawdź historię swojego brancza.
+                </p>
+            </div>
+            <div class="clear"></div>
+</div>
+</body>
+
+</html>
+
+
+
+

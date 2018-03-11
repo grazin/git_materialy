@@ -1,8 +1,8 @@
 Nadal repozytorium rebase_interactive_workshop z Githuba.
 
-Pracujesz wraz z zespo³em nad projektem, który w³aœnie wchodzi na produkcjê. Uda³o wam siê wyrilisowaæ projekt i oddaæ klientom do u¿ytku i chcecie oznaczyæ w historii gita ten historyczny moment.
+Pracujesz wraz z zespoÅ‚em nad projektem, ktÃ³ry wÅ‚aÅ›nie wchodzi na produkcjÄ™. UdaÅ‚o wam siÄ™ wyrilisowaÄ‡ projekt i oddaÄ‡ klientom do uÅ¼ytku i chcecie oznaczyÄ‡ w historii gita ten historyczny moment.
 
-WejdŸ na brancz master i utwórz taga
+WejdÅº na brancz master i utwÃ³rz taga
 
 git checkout master
 git pull
