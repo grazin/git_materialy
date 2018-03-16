@@ -32,15 +32,15 @@ p.plot {
 }
 
 .piece {
-    /* border: 1px solid red; */
+    border-top: 2px dashed rgba(82, 81, 153, .75);
     margin-bottom: 30px;
+    padding-top: 30px;
 }
 
 .piece p {
-    width: 25%;
+    width: 27%;
     padding: 0;
     margin: 0;
-
 }
 
 .clear {
@@ -56,4 +56,24 @@ p.plot {
     padding: 1px 5px;    
     vertical-align: middle;
     display: inline-block;
+}
+
+@media only screen and (max-width: 1440px) {
+    .content {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .piece {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .piece p {
+        width: auto;
+    }
+    .git {
+        width: auto;
+        margin-top: 10px;
+    }
 }
