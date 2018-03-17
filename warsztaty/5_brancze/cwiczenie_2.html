@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <p class="plot">
+            Wróciłeś po dniu nieobecności do pracy, zbliża się deadline, ale nie wypchnąłeś jeszcze swoich zmian z ostatniego dnia w którym byłeś w pracy, czas to nadrobić
+        </p>
+        <img style="height: 300px" src="https://pl.asseco.com/files/public/_processed_/csm_puzzle_123ec9beec.jpg" />
+
+		<p>Użyj repozytorium z poprzedniego ćwiczenia.</p>
+
+        <div class="piece">
+            <div class="git">
+                $ git checkout hello-[your-github-username] <br/>
+				$ git branch
+            </div>
+            <p>
+                Upewnij się, że pracujesz na swoim branczu  <span class="command">hello-[your-github-username]</span>.
+            </p>
+        </div>
+        <div class="clear"></div>
+		
+		<p> Stwórz jakiś plik, dodaj go do indeksu i zakomituj </p>
+		
+		 <div class="piece">
+            <div class="git">
+                $ git push origin hello-[your-github-username] 
+            </div>
+            <p>
+               Teraz możesz wypchąć swoje zmiany do zdalnego repo, tak aby wszyscy mogli podziwiać twoją pracę.
+            </p>
+        </div>
+		
+		<p> Kolega przypomina ci, że dopóki nie domerdżujesz zmian z brancha  <span class="command">important</span> to nie wyrobicie się do deadline </p>
+		
+		 <div class="piece">
+            <div class="git">
+                $ git fetch origin important 
+            </div>
+            <p>
+				I już brancza important mamy lokalnie
+            </p>
+        </div>
+		
+		 <div class="piece">
+            <div class="git">
+                $ git merge origin important 
+            </div>
+            <p>
+				Teraz wystarczy zmerdżować za pomocą komendy <span class="command">merge</span>
+            </p>
+        </div>
+		
+		 <div class="piece">
+            <div class="git">
+                $ git log -5
+            </div>
+            <p>
+				Sprawdzamy czy faktycznie te zmiany są u nas w branczu.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

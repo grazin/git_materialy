@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <p class="plot">
+            Rozpoczynasz prace nad nowym zadaniem, ustalenia w zespole były takie że tworzycie brancza na każdą funkcjonalność. Twoim zadaniem jest napisać plik witający właśnie ciebie.
+        </p>
+        <img style="height: 300px" src="https://img01-olxpl.akamaized.net/img-olxpl/448510463_8_644x461_niepowtarzalny-wieszak-na-ubrania-galaz-galazka-oryginalny-design-_rev006.jpg" />
+
+        <div class="piece">
+            <div class="git">
+                $ git clone https://github.com/morelq/cw5.git
+            </div>
+            <p>Sklonuj repozytorium <span class="command">cw5</span> z Githuba.</p>
+        </div>
+        <div class="clear"></div>
+
+        <div class="piece">
+            <div class="git">
+                <br /> $ git branch hello-[your-github-username]
+            </div>
+            <p>
+              Zaczynamy od stworzenia brancha <span class="command">branch</span> którego nazywamy unikalnie  <span class="command">hello-[your-github-username]</span>.
+            </p>
+        </div>
+        <div class="clear"></div>
+		
+		<div class="piece">
+            <div class="git">
+                $ git status
+            </div><p>Sprawdzamy stan</p>
+        </div>
+        <div class="clear"></div>
+
+        <p>
+            
+			Houston, mamy problem, stworzyliśmy nowego brancha, ale <span class="command">git status</span> dalej pokazuje, że jesteśmy na masterze</p>
+			
+        <div class="piece">
+            <div class="git">
+                $ git branch
+            </div><p>Bezparametrowy git branch pokaże nam wszystkie branche, które posiadamy lokalnie i podświetli ten na którym jesteśmy</p>
+        </div>
+        <div class="clear"></div>
+
+		 <p>
+            No, ok nasz branch <span class="command">hello-[your-github-username]</span> istnieje ale co dalej ?</p>
+		
+		  <div class="piece">
+            <div class="git">
+                $ git checkout hello-[your-github-username]
+            </div><p><span class="command">checkout</span> na ratunek. Sprawdźmy rezultat ...</p>
+        </div>
+        <div class="clear"></div>
+		<div class="piece">
+            <div class="git">
+                $ git status <br/>
+				$ git branch
+            </div><p>Sprawdzamy stan</p>
+        </div>
+        <div class="clear"></div>
+		<p>
+		No i teraz wszystko się zgadza, obie komendy jednoznacznie pokazują, że jesteśmy na dobrym branczu.
+		</p>
+		
+		<div class="piece">
+            <div class="git">
+                $ git push origin hello-[your-github-username]
+            </div><p>Pozostało już tylko udostępnić tego brancha innym a więc do dzieła</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
