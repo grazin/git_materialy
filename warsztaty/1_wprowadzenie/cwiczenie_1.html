@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <link href="../style.css" rel="stylesheet" >
+            </head>
+
+<body>
+    <div class="content">
+        <p class="plot">
+            Jesteś po wymianie komputera, niestety poprzedni sprzęt uległ kompletnej destrukcji, więc zespół wsparcia technicznego nie miał z czego odzyskać danych. Czas więc postawić środowisko od nowa i poprawnie je skonfigurować
+        </p>
+        <img style="width: 300px" src="https://sklep.odziez-robocza.com/images/adler-kolory/uwaga%20awaria.png" />
+        
+        <div class="piece">
+            <div class="git">
+                $ git init
+            </div>
+            <p>Zacznij od utworzenia nowego repozytorium lokalnego za pomocą polecenia <span class="command">init</span>.</p>
+        </div>
+        <div class="clear"></div>
+
+
+        <div class="piece">
+            <div class="git">
+                $ git config user.name &ltimie i nazwisko&gt <br/>
+				$ git config user.email &ltemail&gt
+            </div>
+			<p>Zacznij od wprowadzenia danych identyfikacyjnych <span class="command">user.name</span> <span class="command">user.email</span>. Zrobisz to za pomocą komendy <span class="command">config</span>.
+			</p>
+
+        </div>
+        <div class="clear"></div>
+
+		 <div class="piece">
+            <div class="git">
+                $ git config --global alias.aliases "config --get-regexp ^alias\."
+            </div>
+			<p>Uznałeś, że warto też dodać alias <span class="command">alias</span>, który w prosty sposób pozwoli ci na wyświetlenie wszystkich dostępnych aliasów.
+			Używasz w tym celu polecenia <span class="command">config</span> z parametrem <span class="command">--get-regexp</span> i podająć regexp, który pozwala znaleźć wszystkie aliasy w tekście.
+			A <span class="command">--global</span> pozwoli ustawić ten alias dla wszystkich twoich projektów
+			</p>
+
+        </div>
+        <div class="clear"></div>
+		
+		 <div class="piece">
+            <div class="git">
+                $ git config -l --show-origin
+            </div>
+			<p>Na koniec tylko upewniasz się, że twoja konfiguracja zawiera to co do niej wprowadziłeś. Możesz tego dokonać za pomocą znacznika <span class="command">-l</span> lub <span class="command">--list</span>.
+			A ostatni parametr <span class="command">--show-origin</span> doda tylko informacje, z której konfiguracji jest dany zapis.
+			</p>
+
+        </div>
+        <div class="clear"></div>
+		
+    </div>
+</body>
+
+</html>

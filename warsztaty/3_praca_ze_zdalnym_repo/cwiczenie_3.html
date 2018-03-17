@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../style.css" rel="stylesheet" >
+</head>
+
+<body>
+    <div class="content">
+        <p class="plot">
+			Trzeba kontynuować pracę, ale w momencie kiedy poszedłeś zrobić sobię herbatę, ktoś umyślnie i bez skrupułów udostępnił dwa komity. Co za ludzie
+        </p>
+         <img style="" src="https://androidfilehost.com/images/download-icon.png" />
+
+		<p>Użyj repozytorium z poprzedniego ćwiczenia.</p>
+
+		<p>
+		Nawet jeśli wszyscy już w ciebie zwątpili, pokaż że się ... a nie to nie to. 
+		</p>
+		
+		<div class="piece">
+            <div class="git">
+                $ git status
+            </div><p>Sprawdzamy stan</p>
+        </div>
+        <div class="clear"></div>
+		
+        <div class="piece">
+            <div class="git">
+                $ git fetch origin
+            </div>
+            <p>Wykonanie komendy <span class="command">fetch origin</span> z parametrem url do zdalnego repozytorium skutkuje stworzeniem <b>kompletnej</b> kopii zdalnego repozytorium.</p>
+        </div>
+        <div class="clear"></div>
+
+		<div class="piece">
+            <div class="git">
+                $ git status
+            </div><p>Sprawdzamy stan ponownie</p>
+        </div>
+        <div class="clear"></div>
+
+        <div class="piece">
+            <div class="git">
+                $ git log --oneline master..origin/master
+            </div><p> To wypiszmy sobie te komity, które już pobraliśmy ale jeszcze nie mamy ich "zaakceptowanych  <span class="command">master..origin/master</span> pozwoli nam wyfiltrować te komity
+			a  <span class="command">--oneline</span> jak sama nazwa mówi, wypisze je w jednej lini</p>
+        </div>
+        <div class="clear"></div>
+
+		<div class="piece">
+            <div class="git">
+                $ git log --oneline master..origin/master
+            </div><p> To wypiszmy sobie te komity, które już pobraliśmy ale jeszcze nie mamy ich "zaakceptowanych" <span class="command">master..origin/master</span> pozwoli nam wyfiltrować te komity
+			a  <span class="command">--oneline</span> jak sama nazwa mówi, wypisze je w jednej lini</p>
+        </div>
+        <div class="clear"></div>
+		
+			<div class="piece">
+            <div class="git">
+                $ git pull 
+            </div><p> Kolejnym krokiem będzie tak jakby od nowa wykonanie operacji fetch ale jednak razem z zaakceptowaniem zmian, i wykorzystamy do tego <span class="command">pull</span> </p>
+        </div>
+        <div class="clear"></div>
+		<div class="piece">
+            <div class="git">
+                $ git status
+            </div><p>I ponownie sprawdzamy stan</p>
+        </div>
+		   <div class="clear"></div>
+		   
+		   <p>
+		   Stwórz teraz nowy katalog niech nosi nazwę: 1 litery imienia i nazwisko napisane razem np: pbartela, a w folderze stwórz plik o dowolnej nazwie i dowolnej zawartości
+		   </p>
+		   	<div class="piece">
+            <div class="git">
+                $ git add . <br/>
+				$ git commit 
+            </div><p>Następnie dodaj plik do indeksu i zakomituj go</p>
+        </div>
+		   <div class="clear"></div>
+		   
+		   <div class="piece">
+            <div class="git">
+                $ git status
+            </div><p>I ponownie sprawdzamy stan</p>
+        </div>
+		   <div class="clear"></div>
+		    	<div class="piece">
+            <div class="git">
+                $ git push origin
+            </div><p>A teraz spróbuj użyć komendy <span class="command">push origin</span> <b>UWAGA, kto pierwszy ten lepszy</b></p>
+        </div>
+		   <div class="clear"></div>
+		   
+		    <p>
+		   Oczywiście żartowałem, ze względu na to, że każdy was będzie wypychał w jednym czasie, musicie używać komend <span class="command">pull</span> i <span class="command">push</span> używać naprzemiennie aż do skutku
+		   </p>
+    </div>
+</body>
+
+</html>

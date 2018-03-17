@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <link href="../style.css" rel="stylesheet" >
+            </head>
+
+<body>
+    <div class="content">
+        <p class="plot">
+            Te wszystkie zmiany, które udało ci się już wprowadzić, chciałbyś się nimi z kimś podzielić! Tak zdecydowanie to jest to co chciałbyś zrobić
+        </p>
+        <img style="width: 300px" src="http://i.iplsc.com/new-shepard-ma-w-przyszlosci-zabierac-w-kosmos-wycieczki/0005L92LXAL756GS-C122-F4.jpg" />
+        
+		<p>
+		Dlatego sprawdzimy z kim możemy sobie synchronizować dane
+		</p>
+		
+        <div class="piece">
+            <div class="git">
+                $ git remote
+            </div>
+            <p>No to wyświetlamy zdalne repozytoria za pomocą komendy <span class="command">remote</span>.</p>
+        </div>
+        <div class="clear"></div>
+
+		<p>
+		Ale, że co, że pusto ??!?
+		</p>
+
+        <div class="piece">
+            <div class="git">
+                $ git remote add original https://github.com/morelq/cw3.git
+            </div><p>No to poprawiamy za pomocą <span class="command">add</span>. Następnie podajemy nazwę a zaraz później url do zdalnego repozytorium.</p>
+        </div>
+        <div class="clear"></div>
+
+        <div class="piece">
+            <div class="git">
+                $ git remote -v
+            </div>
+            <p>To teraz na pewno mamy jakieś połączenie do zdalnego repozytorium. Sprawdźmy to. Używamy zwykłego <span class="command">remote</span> ale z parametrem <span class="command">-v</span> aby przy okazji sprawdzić czy url się zgadza</p>
+
+        </div>
+        <div class="clear"></div>
+
+		<p>
+		Ale zaraz zaraz, jaki original ? Dobre praktyki wskazują, żeby domyślne repozytorium zdalne nazywało się origin, musimy to poprawić
+		</p>
+
+        <div class="piece">
+            <div class="git">
+                    $ git remote rename original origin
+            </div>
+            <p>Po zastosowaniu <span class="command">rename</span> podając jako pierwszy parametr starą nazwę, a jako drugi parametr nową, wszystko powinno być jak trzeba</p>
+
+        </div>
+        <div class="clear"></div>	
+		
+        <div class="piece">
+            <div class="git">
+                    $ git config --get-regexp ^remote\.
+            </div>
+            <p>A co z naszym configiem ? Czy tam też się wszystko zgadza ?</p>
+
+        </div>
+        <div class="clear"></div>
+		
+		 <div class="piece">
+            <div class="git">
+                    $ git remote show origin
+            </div>
+            <p>To jeszcze wyświetlmy sobie szczegóły danego połączenia <span class="command">remote show</span> z nazwą repozytorium zwróci odpowiedni rezultat.</p>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
